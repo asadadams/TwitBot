@@ -1,0 +1,25 @@
+{
+  "name": "twitbot",
+  "version": "1.0.0",
+  "description": "A twitter bot ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asadadams/Twitbot.git"
+  },
+  "author": "Asad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asadadams/Twitbot/issues"
+  },
+  "homepage": "https://github.com/asadadams/Twitbot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "iscool": "^2.0.0",
+    "request": "^2.88.0",
+    "twit": "^2.2.11"
+  }
+}

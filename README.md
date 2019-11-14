@@ -10,6 +10,10 @@ TwitBot is a twitter bot built in node. This bot tweets a programmer's quote eve
 
 [isCool](https://www.npmjs.com/package/iscool) is not used in this bot. First planned for the bot to tweet some words and wanted to use this package to make sure these words were not offensive.
 
+### Quotes API
+
+[https://github.com/skolakoda/programming-quotes-api](https://github.com/skolakoda/programming-quotes-api)
+
 ## Environment Variables
 
 - consumer_key

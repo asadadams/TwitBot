@@ -1,6 +1,7 @@
 var Twit = require('twit');
 var Request = require("request");
 const {consumerKey,consumerSecret,accessToken,accessTokenSecret} = require('./config');
+const twitterHandle = "HANDLEHERE"; //Twitter handle
 
 console.log('Twitbot started');
 
@@ -11,7 +12,7 @@ var T = new Twit({
   access_token_secret:  accessTokenSecret
 });
 
-var stream = T.stream('user');
+var stream = T.stream('statuses/filter', { track: `@${twitterHandle}` );
 //When someone follows the bot
 stream.on('follow',function(event){
     var name = event.source.name;
@@ -25,7 +26,7 @@ stream.on('tweet',function(event){
     var tweet = event.text;
     var from = event.user.screen_name;
 
-    if(replyto == TWITTERACCOUNT){
+    if(replyto == twitterHandle){
         makeTweet(`@${from} thanks for tweeting me.`);
     }
 });
